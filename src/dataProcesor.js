@@ -21,7 +21,7 @@ export function procesData(object) {
     precipprobNext: precipprobNext,
     tempNext: tempNext,
   };
-  console.log(weather.tempNext);
-  updateScreen(weather);
+  //console.log(weather.precipprobNext);
+  updateScreen(weather, object);
   //return console.log(weather.conditions);
 }
