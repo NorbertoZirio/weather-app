@@ -1,88 +1,163 @@
-body{
-    background-color: rgb(31, 28, 28);
-    display: flex;
-    margin: 0%;
-    padding: 0%;
-    justify-content: center;
-    height: 100dvh;
-    background-image: url(images/fondo\ para\ una\ pagina\ web\ tipo\ weather\ forecast-optimized.jpg);
-    background-size: cover;
-    flex-direction: column;
-    
-    
+body {
+  background-color: rgb(31, 28, 28);
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  justify-content: center;
+  height: 100dvh;
+  background-image: url(images/fondo\ para\ una\ pagina\ web\ tipo\ weather\ forecast-optimized.jpg);
+  background-size: cover;
+  flex-direction: column;
 }
 
-
-
-main{
-    height: 85dvh;
-    width: 90dvw;
-    background: rgba(155, 153, 153, 0.308);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    align-self: center;
-    border-radius: 20px;
-    margin-top: 2%;
-    
+main {
+  height: 85dvh;
+  width: 90dvw;
+  background: rgba(155, 153, 153, 0.308);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-self: center;
+  border-radius: 20px;
+  margin-top: 2%;
 }
 
-header{
-    display: flex;
-    height: 30%;
+header {
+  display: flex;
+  height: 20%;
 }
 
 img {
-    
-    max-width: 150px;
-    aspect-ratio: 1/1;
-    top: 0%;
-    margin: 0%;
-    padding: 0%;
-    align-self: center;  
+  max-width: 150px;
+  aspect-ratio: 1/1;
+  top: 0%;
+  margin: 0%;
+  padding: 0%;
+  align-self: center;
 }
 
 @media (max-width: 768px) {
-    img {
-        max-width: 100px;
-        max-height: 100px;
-    }
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  body{
+    height: 300vh;
+  }
+
+  main{
+    height: 80%;
+  }
+  div{
+    flex-direction: column;
+  }
+
+  #now{
+    width: 100%;
+  }
+
+  #next{
+    width: 100%;
+  }
+}
+
+form {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 5%;
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+
+input {
+  width: 80%;
+  height: 30%;
+  min-height: 30px;
+  align-self: center;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.425);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 80, 255, 0.3);
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: large;
 }
 
 
-form{
-    align-self: center;
-    margin-left: auto;
-    margin-right: 5%;
-    width: 70%;
-    height: 100%;
+
+#magnify {
+  aspect-ratio: 1/1;
+  height: 30%;
+  align-self: center;
+  margin-left: 1%;
+}
+
+h1 {
+  justify-self: center;
+  color: rgb(238, 234, 234);
+}
+
+div{
     display: flex;
+    width: 100%;
 }
 
-input{
-    width: 80%;
-    height: 25%;
+#now{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+}
+
+#greed{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    /*justify-items: center;*/
+    align-items: center;
+}
+
+
+#temp{
+    fill: blueviolet;
     align-self: center;
-    border-radius: 30px;
-    padding-left: 20px;
-    background-color: rgba(255, 255, 255, 0.425);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(0, 80, 255, 0.3);
-    outline: none;
-    transition: all 0.3s ease;
-    font-size: large;
+    max-width: 50px;
+    aspect-ratio: 1/1;
+    /*justify-self: center;*/
 }
 
-input:focus,
-input:not() {
-    background: rgba(255, 255, 255, 0.493);
-    backdrop-filter: blur(10px);
+#temp-max{
+    fill: red;
+    max-width: 50px;
+    aspect-ratio: 1/1;
+    justify-self: center;
+}
+
+#temp-min{
+    fill: cornflowerblue;
+    max-width: 50px;
+    aspect-ratio: 1/1;
+    justify-self: center;
+}
+
+#next{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
     
 }
 
-footer{
+h2{
     align-self: center;
-    margin: 0%;
-    margin-top: auto;
-    color: rgb(63, 60, 60);
+    color: rgb(238, 234, 234);
+
+}
+
+footer {
+  align-self: center;
+  margin: 0%;
+  margin-top: auto;
+  color: rgb(63, 60, 60);
 }
